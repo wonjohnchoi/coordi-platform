@@ -1,0 +1,6 @@
+#Thu Dec 29 18:05:17 PST 2011
+eclipse.preferences.version=1
+encoding//CodiPlatform/general/views.py=utf-8
+encoding//CodiPlatform/registration/forms.py=utf-8
+encoding//CodiPlatform/registration/migrations/0003_auto__add_field_customuser_accum_votes__add_field_customuser_required_.py=utf-8
+encoding//CodiPlatform/templates/base.html=UTF-8
