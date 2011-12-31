@@ -15,6 +15,7 @@ SHOWCASE_VOTES = 10
 
 MANAGERS = ADMINS
 #DATABASE_URL=postgres://keqgnapfht:MGX7H3tMqgNT7EZC2UEd@ec2-50-19-113-83.compute-1.amazonaws.com/keqgnapfht
+'''
 DATABASES = {
     #postgres://ppwemhrbxq:33ec5gxkfQAcpI1h0db0@ec2-107-21-252-213.compute-1.amazonaws.com/ppwemhrbxq
     'default': {
@@ -27,6 +28,7 @@ DATABASES = {
     }
 }
 '''
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
@@ -38,6 +40,16 @@ DATABASES = {
     }
 }
 '''
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': '', # Or path to database file if using sqlite3.
+        'USER': '',                      # Not used with sqlite3.
+        'PASSWORD': '',                  # Not used with sqlite3.
+        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+    }
+}
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
@@ -142,7 +154,7 @@ INSTALLED_APPS = (
     'CodiPlatform.message',
     'CodiPlatform.codi',    
     'CodiPlatform.setting',
-    'south',
+    #'south',
 
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
