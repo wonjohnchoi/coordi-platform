@@ -14,7 +14,19 @@ EPISODE = 1
 SHOWCASE_VOTES = 10
 
 MANAGERS = ADMINS
-
+#DATABASE_URL=postgres://keqgnapfht:MGX7H3tMqgNT7EZC2UEd@ec2-50-19-113-83.compute-1.amazonaws.com/keqgnapfht
+DATABASES = {
+    #postgres://ppwemhrbxq:33ec5gxkfQAcpI1h0db0@ec2-107-21-252-213.compute-1.amazonaws.com/ppwemhrbxq
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'postgres://keqgnapfht',#os.path.join(basedir, 'sqlite.db'), # Or path to database file if using sqlite3.
+        'USER': 'keqgnapfht',                      # Not used with sqlite3.
+        'PASSWORD': 'MGX7H3tMqgNT7EZC2UEd',                  # Not used with sqlite3.
+        'HOST': 'ec2-50-19-113-83.compute-1.amazonaws.com/keqgnapfht',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+    }
+}
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
@@ -25,7 +37,7 @@ DATABASES = {
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
-
+'''
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
